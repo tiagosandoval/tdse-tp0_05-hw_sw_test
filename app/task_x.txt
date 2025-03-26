@@ -1,14 +1,26 @@
+  Aqui se muestran los distintos tasks. Cada uno pose un metodo de inicializacion y de
+  actualizacion. Según https://www.geeksforgeeks.org/blocking-and-non-blocking-in-node-js/?ref=gcse_outind
+  los distintos tipos de códigos a continuación realizan lo siguiente:
+  
   task_a.c (task_a.h) 
    Blocking Code
+   El bloqueo significa que, cuando el código ejecuta una tarea, se detiene y espera a que
+   esta finalice por completo antes de pasar a la siguiente. Es como leer un libro palabra por 
+   palabra, sin saltarse ninguna. El programa espera pacientemente a que finalice la operación actual.
+   Ningún otro código podrá ejecutarse hasta que se realice dicha operación.
 
 ...
 
   task_b.c (task_b.h)
    Non-Blocking Code
+   Sin bloqueo significa que su programa puede seguir realizando otras tareas mientras una tarea se 
+   ejecuta en segundo plano. No tiene que detenerse y esperar a que la tarea finalice antes de continuar.
+   El programa no espera a que se complete la tarea actual. Se puede ejecutar otro código mientras la 
+   tarea se ejecuta en segundo plano.
 
 ...
 
   task_c.c (task_c.h)
    Update by Time Code
-
+   Este código funciona mediante ticks de reloj. En cada uno de ellos, la aplicación se actualiza.
 ...

@@ -1,0 +1,31 @@
+Este archivo contiene, como se menciona en el cuestionario, contiene al método main(), que invoca 
+a los método app_init() y app_update(), para inicializar y ejecutar el ejecutor cíclico de tareas.
+
+En el main, se observan los siguientes métodos:
+- initialise_monitor_handles()
+
+- HAL_Init() 
+	HAL son las iniciales de Hardware Abstraction Layer, es una libreria definida por
+	STM para interactuar con el Hardware facilmente. Esta instrucción inicializa esta librería.
+	
+- SystemClock_Config()
+	Esta función configura el reloj mediante dos estructuras de datos: RCC_OscInitTypeDef y 
+	RCC_ClkInitTypeDef. Estas son parte del sistema Reset and Clock Control (RCC). 
+	RCC_OscInitTypeDef Esta estructura se usa para configurar los osciladores del microcontrolador
+	mientras que RCC_OscInitTypeDef define cómo se distribuyen los relojes a los diferentes buses 
+	y periféricos una vez que los osciladores están configurados 
+
+- MX_GPIO_Init(); MX_ETH_Init(); MX_USART3_UART_Init(); MX_USB_OTG_FS_PCD_Init();
+	Estas funciones inicializan los periféricos del microcontrolador, particularmente los pines 
+	GPIO (General Purpose Input/Output), el controlador Ethernet, el periférico USART3 para 
+	comunicación UART (módulos) y el controlador USB OTG en modo PCD, respectivamente.
+	
+- app_init(); app_update();
+	Como se menciono al principio, sirven para inicializar y ejecutar el ejecutor cíclico de tareas
+	mediante un while. En app.txt lo describo en profundidad.
+	
+- Error_Handler()
+	Contiene la función __disable_irq(), la que deshabilita todas las interrupciones y evita que el 
+	sistema siga ejecutando código en un estado inconsistente.
+	
+ 

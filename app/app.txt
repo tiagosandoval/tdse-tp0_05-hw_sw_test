@@ -1,3 +1,25 @@
+Este archivo contiene las funciones app_init() y app_update() utilizadas en main.c.
+Primero se definen dos estructuras de datos, task_cfg_t y task_dta_t. El primero es una 
+estructura que tiene punteros a la inicializacion y actualizacion de tasks, como tambien a 
+sus parametros. El segundo posee una variable de tipo uint32_t que se asocia al peor caso 
+con respecto al tiempo de ejecución.
+Luego se define una task_cfg_list[] de tipo task_cfg_t que posee distintos tasks en ella 
+(inicializacion y actualizacion).
+
+- app_init()
+	se recorre la lista task_cfg_list[] e inicializan los tasks y los parámetros. También se
+	recorre una lista task_dta_list[] de tipo task_dta_t creada anteriormente. Luego se invoca
+	a la función cycle_counter_init().
+	
+- app_update()
+	primero se chequea si es tiempo de correr los tasks. Si es así, se actualiza el contador de
+	la app y se invoca a cycle_counter_reset(). Luego se recorren la listas task_cfg_list[] y 
+	task_dta_list[] actualizando los tasks y los parámetros. 
+	
+
+
+
+
   app.c (app.h)
    Endless loops, which execute tasks with fixed computing time. This 
    sequential execution is only deviated from when an interrupt event occurs.

@@ -1,0 +1,5 @@
+Este archivo es el script de startup para el microcontrolador 
+escrito en lenguaje ensamblador. Su función principal es preparar el sistema antes 
+de ejecutar el código en C, ya que es el lenguaje que entiende el microcontrolador y con el que
+se sentan las bases para programar en C y que el microcontrolador funcione como se desea.
+
