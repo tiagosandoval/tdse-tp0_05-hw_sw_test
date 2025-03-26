@@ -1,0 +1,221 @@
+  app.c (app.h)
+   Endless loops, which execute tasks with fixed computing time. This 
+   sequential execution is only deviated from when an interrupt event occurs.
+
+app_init is running - Tick [mS] = 19
+
+ Bare Metal - Event-Triggered Systems (ETS)
+
+ App - retarget_printf_to_Console
+
+ g_app_cnt = 0
+
+  task_a_init is running - Task A - Blocking Code
+
+   g_task_a_cnt = 0
+
+  task_b_init is running - Task B - Non-Blocking Code
+
+   g_task_b_cnt = 0
+
+  task_c_init is running - Task C - Update by Time Code
+
+   g_task_c_cnt = 0
+
+ g_app_cnt = 1
+
+  task_a_update is running - Task A - Blocking Code
+
+   g_task_a_cnt = 1
+
+ g_app_time_us: 134 uS
+
+  task_b_update is running - Task B - Non-Blocking Code
+
+   g_task_b_cnt = 1
+
+ g_app_time_us: 198 uS
+
+  task_c_update is running - Task C - Update by Time Code
+
+   g_task_c_cnt = 1
+
+ g_app_time_us: 263 uS
+
+ g_app_cnt = 2
+
+  task_a_update is running - Task A - Blocking Code
+
+   g_task_a_cnt = 2
+
+ g_app_time_us: 134 uS
+
+  task_b_update is running - Task B - Non-Blocking Code
+
+   g_task_b_cnt = 2
+
+ g_app_time_us: 198 uS
+
+  task_c_update is running - Task C - Update by Time Code
+
+   g_task_c_cnt = 2
+
+ g_app_time_us: 264 uS
+
+ g_app_cnt = 3
+
+  task_a_update is running - Task A - Blocking Code
+
+   g_task_a_cnt = 3
+
+ g_app_time_us: 134 uS
+
+  task_b_update is running - Task B - Non-Blocking Code
+
+   g_task_b_cnt = 3
+
+ g_app_time_us: 198 uS
+
+  task_c_update is running - Task C - Update by Time Code
+
+   g_task_c_cnt = 3
+
+ g_app_time_us: 263 uS
+
+ g_app_cnt = 4
+
+  task_a_update is running - Task A - Blocking Code
+
+   g_task_a_cnt = 4
+
+ g_app_time_us: 134 uS
+
+  task_b_update is running - Task B - Non-Blocking Code
+
+   g_task_b_cnt = 4
+
+ g_app_time_us: 198 uS
+
+  task_c_update is running - Task C - Update by Time Code
+
+   g_task_c_cnt = 4
+
+ g_app_time_us: 263 uS
+
+ g_app_cnt = 5
+
+  task_a_update is running - Task A - Blocking Code
+
+   g_task_a_cnt = 5
+
+ g_app_time_us: 134 uS
+
+  task_b_update is running - Task B - Non-Blocking Code
+
+   g_task_b_cnt = 5
+
+ g_app_time_us: 198 uS
+
+  task_c_update is running - Task C - Update by Time Code
+
+   g_task_c_cnt = 5
+
+ g_app_time_us: 263 uS
+
+ g_app_cnt = 6
+
+  task_a_update is running - Task A - Blocking Code
+
+   g_task_a_cnt = 6
+
+ g_app_time_us: 134 uS
+
+  task_b_update is running - Task B - Non-Blocking Code
+
+   g_task_b_cnt = 6
+
+ g_app_time_us: 198 uS
+
+  task_c_update is running - Task C - Update by Time Code
+
+   g_task_c_cnt = 6
+
+ g_app_time_us: 263 uS
+
+ g_app_cnt = 7
+
+  task_a_update is running - Task A - Blocking Code
+
+   g_task_a_cnt = 7
+
+ g_app_time_us: 134 uS
+
+  task_b_update is running - Task B - Non-Blocking Code
+
+   g_task_b_cnt = 7
+
+ g_app_time_us: 198 uS
+
+  task_c_update is running - Task C - Update by Time Code
+
+   g_task_c_cnt = 7
+
+ g_app_time_us: 263 uS
+
+ g_app_cnt = 8
+
+  task_a_update is running - Task A - Blocking Code
+
+   g_task_a_cnt = 8
+
+ g_app_time_us: 134 uS
+
+  task_b_update is running - Task B - Non-Blocking Code
+
+   g_task_b_cnt = 8
+
+ g_app_time_us: 198 uS
+
+  task_c_update is running - Task C - Update by Time Code
+
+   g_task_c_cnt = 8
+
+ g_app_time_us: 263 uS
+
+ g_app_cnt = 9
+
+  task_a_update is running - Task A - Blocking Code
+
+   g_task_a_cnt = 9
+
+ g_app_time_us: 134 uS
+
+  task_b_update is running - Task B - Non-Blocking Code
+
+   g_task_b_cnt = 9
+
+ g_app_time_us: 198 uS
+
+  task_c_update is running - Task C - Update by Time Code
+
+   g_task_c_cnt = 9
+
+ g_app_time_us: 263 uS
+
+ g_app_cnt = 10
+
+  task_a_update is running - Task A - Blocking Code
+
+   g_task_a_cnt = 10
+
+ g_app_time_us: 134 uS
+
+  task_b_update is running - Task B - Non-Blocking Code
+
+   g_task_b_cnt = 10
+   
+   Info : dropped 'gdb' connection
+shutdown command invoked
+Info : dropped 'gdb' connection
+
+...
